@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a la familia | Hub de Contenidos Transversal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            olive: '#2C3A2E',      /* Verde oliva / hunter profundo */
+                            terracotta: '#B84A32', /* Terracota cálido mexicano */
+                            mustard: '#E59B38',    /* Amarillo cempasúchil / mostaza */
+                            cream: '#FBF8F3',      /* Fondo crema / lino */
+                            dark: '#1A211B',       /* Texto oscuro de alto contraste */
+                            card: '#FFFFFF',       /* Tarjetas */
+                            subtle: '#EFEAE1'      /* Bordes suaves y separadores */
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FBF8F3;
+            color: #1A211B;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .font-serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom image gradient overlay */
+        .card-img-overlay {
+            background: linear-gradient(180deg, rgba(26,33,27,0.05) 0%, rgba(26,33,27,0.6) 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-brand-terracotta selection:text-white">
+
+    <!-- HEADER / HERO SECTION -->
+    <header class="w-full bg-brand-olive text-brand-cream relative overflow-hidden py-12 md:py-20 px-4 sm:px-6 lg:px-8 shadow-xl">
+        <!-- Background decorative elements -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-terracotta opacity-20 filter blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-brand-mustard opacity-15 filter blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <!-- Institutional Badge -->
+            <div class="flex flex-wrap items-center gap-2 mb-6">
+                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-brand-terracotta text-white shadow-sm">
+                    <i class="fa-solid font-black fa-graduation-cap" aria-hidden="true"></i>
+                    Grado en Comunicación Audiovisual 3ºA
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-brand-cream border border-white/20">
+                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                    Curso 2026/2027
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-brand-cream border border-white/20">
+                    Universidad Francisco de Vitoria
+                </span>
+            </div>
+
+            <!-- Main Title & Subtitle -->
+            <div class="mb-8">
+                <h1 class="font-serif-title text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white mb-3">
+                    Bienvenidos a la Familia
+                </h1>
+                <p class="text-xl sm:text-2xl font-medium text-brand-mustard tracking-wide">
+                    Hub Digital del Proyecto Transversal <span class="text-white/60">|</span> <span class="underline decoration-brand-terracotta decoration-2 underline-offset-4">Grupo 6</span>
+                </p>
+            </div>
+
+            <!-- Synopsis Card -->
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/15 shadow-inner mb-10 max-w-4xl">
+                <h2 class="text-xs uppercase tracking-widest text-brand-mustard font-bold mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-clapperboard"></i> Sinopsis del Proyecto
+                </h2>
+                <p class="text-base sm:text-lg text-brand-cream/95 leading-relaxed font-normal">
+                    Valentina, una joven mexicana espontánea y llena de vida se muda a Madrid. Allí conoce a Borja, su novio, que le presentará a su adinerada y tradicional familia. Un choque cultural cómico y dramático donde el color, el deber familiar y la búsqueda de la propia identidad se enfrentan en una cena inolvidable.
+                </p>
+            </div>
+
+            <!-- Team Members Pill List -->
+            <div>
+                <h3 class="text-xs uppercase tracking-widest text-white/70 font-bold mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-users"></i> Equipo Integrante (Grupo 6)
+                </h3>
+                <ul class="flex flex-wrap gap-2 sm:gap-3" aria-label="Integrantes del grupo">
+                    <li class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-brand-cream/10 text-white border border-white/15 hover:bg-white/20 transition-all">
+                        <i class="fa-solid fa-circle-user text-brand-mustard text-xs"></i> Diana Barrera
+                    </li>
+                    <li class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-brand-cream/10 text-white border border-white/15 hover:bg-white/20 transition-all">
+                        <i class="fa-solid fa-circle-user text-brand-mustard text-xs"></i> Elena Martínez
+                    </li>
+                    <li class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-brand-cream/10 text-white border border-white/15 hover:bg-white/20 transition-all">
+                        <i class="fa-solid fa-circle-user text-brand-mustard text-xs"></i> Miguel Primitivi
+                    </li>
+                    <li class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-brand-cream/10 text-white border border-white/15 hover:bg-white/20 transition-all">
+                        <i class="fa-solid fa-circle-user text-brand-mustard text-xs"></i> Gloria Curbera
+                    </li>
+                    <li class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-brand-cream/10 text-white border border-white/15 hover:bg-white/20 transition-all">
+                        <i class="fa-solid fa-circle-user text-brand-mustard text-xs"></i> Alejandra Pindado
+                    </li>
+                    <li class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-medium bg-brand-cream/10 text-white border border-white/15 hover:bg-white/20 transition-all">
+                        <i class="fa-solid fa-circle-user text-brand-mustard text-xs"></i> Marta Riego
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT HUB -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 w-full flex-grow">
+        <!-- Section Title Header -->
+        <div class="mb-10 text-center sm:text-left border-b border-brand-subtle pb-6 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4">
+            <div>
+                <span class="text-brand-terracotta font-semibold text-sm uppercase tracking-wider">Entregables Principales</span>
+                <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-brand-dark mt-1">
+                    Hub de Contenidos Multimedia
+                </h2>
+            </div>
+            <p class="text-sm text-brand-dark/70 max-w-md">
+                Explora el desarrollo transmedia de nuestro proyecto: desde la pieza audiovisual narrativa principal hasta el desglose estético y auditivo.
+            </p>
+        </div>
+
+        <!-- Content Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- CARD 1: Cortometraje Principal -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-lg border border-brand-subtle flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl group">
+                <!-- Visual Header / Image Container -->
+                <div class="relative h-56 bg-brand-dark overflow-hidden flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80" 
+                         alt="Cena familiar cinemática representando el choque cultural" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-85"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x500/2C3A2E/FBF8F3?text=Bienvenidos+a+la+Familia';">
+                    <div class="absolute inset-0 card-img-overlay"></div>
+                    
+                    <!-- Category Badge -->
+                    <span class="absolute top-4 left-4 bg-brand-terracotta text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                        <i class="fa-solid fa-film mr-1"></i> Cortometraje
+                    </span>
+
+                    <!-- Visual Accent Dual Color Tag -->
+                    <div class="absolute bottom-3 right-3 bg-brand-dark/80 backdrop-blur-md text-brand-cream text-xs px-2.5 py-1 rounded-lg border border-white/20 flex items-center gap-1.5">
+                        <span class="w-2.5 h-2.5 rounded-full bg-brand-terracotta" title="Cálido / Valentina"></span>
+                        <span class="text-[10px] uppercase tracking-wider text-white/80">vs</span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-brand-olive" title="Sobrio / Borja"></span>
+                    </div>
+                </div>
+
+                <!-- Card Body -->
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="font-serif-title text-2xl font-bold text-brand-dark mb-2 group-hover:text-brand-terracotta transition-colors">
+                            Bienvenidos a la Familia
+                        </h3>
+                        <p class="text-sm text-brand-dark/80 leading-relaxed mb-4">
+                            Cuando una joven mexicana extrovertida conoce a la familia aristocrática de su novio madrileño durante una cena que termina en tragedia, el choque cultural destapa las grietas de una familia obsesionada con las apariencias y obliga a su novio a elegir entre el amor y el legado que amenaza con robarle su identidad.
+                        </p>
+                    </div>
+
+                    <!-- Action Button -->
+                    <div class="pt-4 border-t border-brand-subtle/60">
+                        <button onclick="openModal('Cortometraje Principal', 'Acceso a la visualización del cortometraje completo y a la Ficha Técnica oficial del proyecto (Dirección, Guion, Fotografía y Producción).')" 
+                           class="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-brand-olive hover:bg-brand-dark text-white font-medium rounded-xl transition-colors duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-olive focus:ring-offset-2">
+                            <span>Ver Proyecto / Ficha Técnica</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 2: Mood Reel -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-lg border border-brand-subtle flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl group">
+                <!-- Visual Header / Image Container -->
+                <div class="relative h-56 bg-brand-dark overflow-hidden flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80" 
+                         alt="Montaje de edición de video y corrección de color" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-85"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x500/B84A32/FBF8F3?text=Mood+Reel+Cinematografico';">
+                    <div class="absolute inset-0 card-img-overlay"></div>
+                    
+                    <!-- Category Badge -->
+                    <span class="absolute top-4 left-4 bg-brand-mustard text-brand-dark text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                        <i class="fa-solid fa-sliders mr-1"></i> Dirección de Arte
+                    </span>
+                </div>
+
+                <!-- Card Body -->
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="font-serif-title text-2xl font-bold text-brand-dark mb-2 group-hover:text-brand-terracotta transition-colors">
+                            Atmósfera y Tono Cinematográfico
+                        </h3>
+                        <p class="text-sm text-brand-dark/80 leading-relaxed mb-4">
+                            Se propone realizar un mood reel que defina la estética, el tono y la atmósfera visual del cortometraje, combinando referencias cinematográficas, fotografía, paleta de colores, música y diseño sonoro. Se buscará contrastar la espontaneidad y calidez de Valentina con la rigidez y formalidad de la familia de Borja, reflejando el choque cultural y social a través de una comedia dramática con elementos de humor incómodo, sátira y crítica a las apariencias y las estructuras familiares</em>.
+                        </p>
+                    </div>
+
+                    <!-- Action Button -->
+                    <div class="pt-4 border-t border-brand-subtle/60">
+                        <button onclick="openModal('Mood Reel Audiovisual', 'Visualización del carrete de referencias visuales, esquemas de iluminación y tratamiento térmico de color del proyecto.')" 
+                           class="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-brand-terracotta hover:bg-[#9E3C27] text-white font-medium rounded-xl transition-colors duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-terracotta focus:ring-offset-2">
+                            <span>Ver Mood Reel</span>
+                            <i class="fa-solid fa-play text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CARD 3: Podcast -->
+            <article class="bg-brand-card rounded-2xl overflow-hidden shadow-lg border border-brand-subtle flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl group md:col-span-2 lg:col-span-1">
+                <!-- Visual Header / Image Container -->
+                <div class="relative h-56 bg-brand-dark overflow-hidden flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80" 
+                         alt="Micrófono de podcast y audífonos cinematográficos" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-85"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x500/E59B38/1A211B?text=Podcast+La+Llamada';">
+                    <div class="absolute inset-0 card-img-overlay"></div>
+                    
+                    <!-- Category Badge -->
+                    <span class="absolute top-4 left-4 bg-brand-olive text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                        <i class="fa-solid fa-podcast mr-1"></i> Audio Transmedia
+                    </span>
+                </div>
+
+                <!-- Card Body -->
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="font-serif-title text-2xl font-bold text-brand-dark mb-2 group-hover:text-brand-terracotta transition-colors">
+                            Podcast: "La Llamada"
+                        </h3>
+                        <p class="text-sm text-brand-dark/80 leading-relaxed mb-4">
+                            Episodio de audio inmersivo donde Valentina comparte de forma fresca y sin filtros con su amiga en México sus primeras e insólitas impresiones tras caminar por Madrid.
+                        </p>
+                    </div>
+
+                    <!-- Action Button -->
+                    <div class="pt-4 border-t border-brand-subtle/60">
+                        <button onclick="openModal('Podcast Transmedia: La Llamada', 'Reproducción del episodio completo con diseño de sonido inmersivo y diario sonoro de la protagonista.')" 
+                           class="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-brand-olive hover:bg-brand-dark text-white font-medium rounded-xl transition-colors duration-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-olive focus:ring-offset-2">
+                            <span>Escuchar Episodio</span>
+                            <i class="fa-solid fa-headphones text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- INTERACTIVE MODAL (Replaces alert/confirm) -->
+    <div id="contentModal" class="fixed inset-0 bg-brand-dark/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4 transition-opacity duration-300">
+        <div class="bg-brand-card rounded-2xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-brand-subtle relative transform transition-transform duration-300 scale-95" id="modalContainer">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-brand-dark/50 hover:text-brand-dark p-2 rounded-lg transition-colors" aria-label="Cerrar modal">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            
+            <div class="w-12 h-12 rounded-full bg-brand-cream flex items-center justify-center mb-4 text-brand-terracotta text-xl border border-brand-subtle">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            
+            <h3 id="modalTitle" class="font-serif-title text-2xl font-bold text-brand-dark mb-2"></h3>
+            <p id="modalDescription" class="text-sm text-brand-dark/80 leading-relaxed mb-6"></p>
+            
+            <div class="flex justify-end gap-3">
+                <button onclick="closeModal()" class="w-full px-5 py-2.5 bg-brand-olive text-white font-medium rounded-xl hover:bg-brand-dark transition-colors text-sm">
+                    Entendido / Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-brand-cream py-10 border-t border-brand-olive/40 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-8 border-b border-white/10">
+                
+                <!-- Academic Info -->
+                <div class="text-center md:text-left">
+                    <p class="font-serif-title text-xl font-bold text-white mb-1">
+                        Bienvenidos a la familia
+                    </p>
+                    <p class="text-xs text-brand-cream/70">
+                        Gestión y Desarrollo Web <span class="text-brand-mustard">•</span> Curso Académico 2026/2027
+                    </p>
+                    <p class="text-xs text-brand-cream/60 mt-0.5">
+                        Grado en Comunicación Audiovisual, 3ºA — Universidad Francisco de Vitoria (UFV)
+                    </p>
+                </div>
+
+                <!-- Contact & Github Buttons -->
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                    <a href="mailto:9400235@alumnos.ufv.es" class="inline-flex items-center gap-2 text-xs font-medium px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-brand-cream transition-colors border border-white/10">
+                        <i class="fa-regular fa-envelope text-brand-mustard"></i> 9400235@alumnos.ufv.es
+                    </a>
+                    <a href="mailto:9407313@alumnos.ufv.es" class="inline-flex items-center gap-2 text-xs font-medium px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-brand-cream transition-colors border border-white/10">
+                        <i class="fa-regular fa-envelope text-brand-mustard"></i> 9407313@alumnos.ufv.es
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-medium px-4 py-2 rounded-xl bg-brand-terracotta hover:bg-[#9E3C27] text-white transition-colors shadow-sm">
+                        <i class="fa-brands fa-github"></i> Repositorio GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Rights & Credits -->
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-brand-cream/50 gap-2">
+                <p>&copy; 2026-2027 Grupo 6. Todos los derechos reservados.</p>
+                <p class="flex items-center gap-1">
+                    Diseñado para la asignatura Gestión y Desarrollo Web (UFV)
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR INTERACTION -->
+    <script>
+        function openModal(title, description) {
+            const modal = document.getElementById('contentModal');
+            const container = document.getElementById('modalContainer');
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDescription').innerText = description;
+            
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                container.classList.remove('scale-95');
+                container.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('contentModal');
+            const container = document.getElementById('modalContainer');
+            
+            container.classList.remove('scale-100');
+            container.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 150);
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
